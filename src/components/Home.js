@@ -1,15 +1,6 @@
-import React from "react";
-import products from "../products";
-const Home = () => {
-  const productList = products.map((product) => (
-    <div className="product">
-      <img className="productImage" alt={product.name} src={product.image} />
-      <p className="text">{product.name}</p>
-      <p className="text">{product.price} KD</p>
-    </div>
-  ));
+function Home() {
   return (
-    <div className="body">
+    <>
       <div>
         <h1 className="text">Cookies and Beyond</h1>
         <h4 className="text">Where cookie maniacs gather</h4>
@@ -19,9 +10,7 @@ const Home = () => {
           className="shopImage"
         />
       </div>
-      <div className="list">{productList}</div>
-    </div>
+    </>
   );
-};
-
+}
 export default Home;
